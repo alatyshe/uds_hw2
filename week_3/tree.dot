@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="spore_print_color <= 2.5\ngini = 0.5\nsamples = 6499\nvalue = [3163, 3336]", fillcolor="#399de50d"] ;
+1 [label="gill_size <= 0.5\ngini = 0.291\nsamples = 3139\nvalue = [554, 2585]", fillcolor="#399de5c8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gill_color <= 0.5\ngini = 0.141\nsamples = 2664\nvalue = [204, 2460]", fillcolor="#399de5ea"] ;
+1 -> 2 ;
+3 [label="gini = 0.087\nsamples = 264\nvalue = [12, 252]", fillcolor="#399de5f3"] ;
+2 -> 3 ;
+4 [label="gini = 0.147\nsamples = 2400\nvalue = [192, 2208]", fillcolor="#399de5e9"] ;
+2 -> 4 ;
+5 [label="odor <= 1.5\ngini = 0.388\nsamples = 475\nvalue = [350, 125]", fillcolor="#e58139a4"] ;
+1 -> 5 ;
+6 [label="gini = 0.097\nsamples = 39\nvalue = [2, 37]", fillcolor="#399de5f1"] ;
+5 -> 6 ;
+7 [label="gini = 0.322\nsamples = 436\nvalue = [348, 88]", fillcolor="#e58139bf"] ;
+5 -> 7 ;
+8 [label="ring_number <= 1.5\ngini = 0.347\nsamples = 3360\nvalue = [2609, 751]", fillcolor="#e58139b6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="veil_color <= 1.5\ngini = 0.223\nsamples = 2889\nvalue = [2519, 370]", fillcolor="#e58139da"] ;
+8 -> 9 ;
+10 [label="gini = 0.137\nsamples = 81\nvalue = [6, 75]", fillcolor="#399de5eb"] ;
+9 -> 10 ;
+11 [label="gini = 0.188\nsamples = 2808\nvalue = [2513, 295]", fillcolor="#e58139e1"] ;
+9 -> 11 ;
+12 [label="spore_print_color <= 5.5\ngini = 0.309\nsamples = 471\nvalue = [90, 381]", fillcolor="#399de5c3"] ;
+8 -> 12 ;
+13 [label="gini = 0.175\nsamples = 62\nvalue = [56, 6]", fillcolor="#e58139e4"] ;
+12 -> 13 ;
+14 [label="gini = 0.152\nsamples = 409\nvalue = [34, 375]", fillcolor="#399de5e8"] ;
+12 -> 14 ;
+}
